@@ -41,30 +41,11 @@
       />
       <button>🤍</button>
     </div>
-    <ul class="favorites">
-      <li>
-        <img
-          src="https://cataas.com/cat/60b73094e04e18001194a309/says/react"
-          alt="고양이"
-        />
-      </li>
-      <li>
-        <img
-          src="https://cataas.com/cat/60b73094e04e18001194a309/says/react"
-          alt="고양이"
-        />
-      </li>
-      <li>
-        <img
-          src="https://cataas.com/cat/60b73094e04e18001194a309/says/react"
-          alt="고양이"
-        />
-      </li>
-    </ul> -->
+     -->
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script>
+    <script type="text/babel">
       console.log("야옹");
 
       const catItem = (
@@ -72,6 +53,28 @@
           <img src="https://cataas.com/cat/60b73094e04e18001194a309/says/react" />
           </li>
       );
+      const favorites = (
+        <ul class="favorites">
+          <li>
+            <img
+              src="https://cataas.com/cat/60b73094e04e18001194a309/says/react"
+              alt="고양이"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cataas.com/cat/60b73094e04e18001194a309/says/react"
+              alt="고양이"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cataas.com/cat/60b73094e04e18001194a309/says/react"
+              alt="고양이"
+            />
+          </li>
+        </ul>
+      )
       const 여기다가그려 = document.querySelector('#app');
 
       ReactDOM.render(catItem, 여기다가그려)
