@@ -40,9 +40,12 @@
       }
       
       const Form = () => {
+        const [counter, setCounter] = React.useState(1);
+
         function handleFormSubmit(event) {
           event.preventDefault();
           console.log('폼 전송됨')
+          setCounter(counter + 1)
         }
         return (
           <form onSubmit={handleFormSubmit}>
