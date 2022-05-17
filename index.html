@@ -44,20 +44,21 @@
         </form>
       );
 
-      const catItem = (
-        <li>
+      function CatItem() {
+        return (
+          <li>
           <img src="https://cataas.com/cat/60b73094e04e18001194a309/says/react" />
-          </li>
-      );
+        </li>
+        )
+      }
 
       const favorites = (
         <ul class="favorites">
-          {catItem}
-          {catItem}
-          {catItem}
+          <CatItem />
+          <CatItem />
         </ul>
       );
-      
+
       const mainCard = (
         <div class="main-card">
           <img
